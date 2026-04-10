@@ -1,0 +1,72 @@
+{
+  "$schema": "https://design-tokens.org/schema.json",
+  "$description": "设计系统索引文件 - AI可读格式",
+  "name": "AI-Friendly Design System",
+  "version": "1.0.0",
+  "description": "这是一套为AI工具（Claude、Codex、Cursor等）优化的设计系统规范",
+  "source": {
+    "figma": {
+      "original": "https://www.figma.com/design/8EPfafesUWZV92e2VqfmRq/",
+      "target": "https://www.figma.com/design/bNbp9f3xwWpNvSTMGahf8r/"
+    }
+  },
+  "tokens": {
+    "colors": {
+      "path": "./tokens/colors.json",
+      "description": "颜色令牌，包括主色、次要色、中性色、语义色"
+    },
+    "typography": {
+      "path": "./tokens/typography.json",
+      "description": "字体令牌，包括字体族、大小、粗细、行高"
+    },
+    "spacing": {
+      "path": "./tokens/spacing.json",
+      "description": "间距令牌，基于4px网格系统"
+    },
+    "effects": {
+      "path": "./tokens/effects.json",
+      "description": "效果令牌，包括阴影、圆角、透明度、过渡"
+    }
+  },
+  "components": {
+    "button": {
+      "path": "./components/button.json",
+      "description": "按钮组件规范"
+    },
+    "input": {
+      "path": "./components/input.json",
+      "description": "输入框组件规范"
+    },
+    "card": {
+      "path": "./components/card.json",
+      "description": "卡片组件规范"
+    }
+  },
+  "guidelines": {
+    "aiUsage": {
+      "description": "AI工具使用指南",
+      "instructions": [
+        "使用语义化的令牌名称引用设计值",
+        "遵循组件的usage规范中的do和dont",
+        "使用$description字段理解每个令牌的用途",
+        "通过$type字段确定令牌的数据类型",
+        "使用花括号引用其他令牌值，如{colors.primary.500}"
+      ]
+    },
+    "naming": {
+      "description": "命名规范",
+      "conventions": [
+        "使用小驼峰命名（camelCase）",
+        "颜色使用数字表示深浅（50-900）",
+        "间距使用数字表示倍数（1=4px）",
+        "组件状态使用标准名称（default、hover、active、disabled）"
+      ]
+    }
+  },
+  "metadata": {
+    "createdAt": "2026-04-10",
+    "updatedAt": "2026-04-10",
+    "author": "Design System Generator",
+    "license": "MIT"
+  }
+}

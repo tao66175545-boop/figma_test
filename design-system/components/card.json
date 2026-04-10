@@ -1,0 +1,90 @@
+{
+  "$schema": "https://design-tokens.org/schema.json",
+  "$description": "卡片组件规范 - AI可读格式",
+  "component": "Card",
+  "description": "卡片是一个容器组件，用于展示相关内容的集合",
+  "variants": {
+    "elevated": {
+      "description": "带阴影的卡片",
+      "background": "{colors.neutral.0}",
+      "border": "none",
+      "shadow": "{effects.shadow.md}",
+      "borderRadius": "{effects.borderRadius.lg}"
+    },
+    "outlined": {
+      "description": "带边框的卡片",
+      "background": "{colors.neutral.0}",
+      "border": "1px solid {colors.neutral.200}",
+      "shadow": "none",
+      "borderRadius": "{effects.borderRadius.lg}"
+    },
+    "filled": {
+      "description": "带背景色的卡片",
+      "background": "{colors.neutral.50}",
+      "border": "none",
+      "shadow": "none",
+      "borderRadius": "{effects.borderRadius.lg}"
+    }
+  },
+  "elements": {
+    "header": {
+      "description": "卡片头部",
+      "padding": "{spacing.4}",
+      "borderBottom": "1px solid {colors.neutral.200}"
+    },
+    "body": {
+      "description": "卡片主体",
+      "padding": "{spacing.4}"
+    },
+    "footer": {
+      "description": "卡片底部",
+      "padding": "{spacing.4}",
+      "borderTop": "1px solid {colors.neutral.200}"
+    },
+    "media": {
+      "description": "卡片媒体区域",
+      "aspectRatio": "16/9",
+      "borderRadius": "{effects.borderRadius.lg} {effects.borderRadius.lg} 0 0"
+    },
+    "title": {
+      "fontSize": "{typography.fontSize.lg}",
+      "fontWeight": "{typography.fontWeight.semibold}",
+      "color": "{colors.neutral.900}"
+    },
+    "subtitle": {
+      "fontSize": "{typography.fontSize.sm}",
+      "fontWeight": "{typography.fontWeight.regular}",
+      "color": "{colors.neutral.600}"
+    },
+    "content": {
+      "fontSize": "{typography.fontSize.base}",
+      "color": "{colors.neutral.700}",
+      "lineHeight": "{typography.lineHeight.normal}"
+    }
+  },
+  "states": {
+    "interactive": {
+      "hover": {
+        "shadow": "{effects.shadow.lg}",
+        "transform": "translateY(-2px)",
+        "transition": "{effects.transition.duration.normal}"
+      },
+      "active": {
+        "shadow": "{effects.shadow.sm}",
+        "transform": "translateY(0)"
+      }
+    }
+  },
+  "usage": {
+    "do": [
+      "使用卡片将相关内容分组",
+      "保持卡片内容简洁",
+      "使用一致的卡片样式"
+    ],
+    "dont": [
+      "不要在卡片中嵌套过多层级",
+      "不要在一个卡片中放置过多操作",
+      "不要混合使用不同样式的卡片"
+    ]
+  }
+}
