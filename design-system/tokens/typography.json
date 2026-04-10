@@ -1,0 +1,167 @@
+{
+  "$schema": "https://design-tokens.org/schema.json",
+  "$description": "设计系统字体令牌 - AI可读格式",
+  "typography": {
+    "fontFamily": {
+      "$type": "fontFamily",
+      "primary": {
+        "$value": "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+        "$description": "主字体，用于正文和UI元素"
+      },
+      "secondary": {
+        "$value": "'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif",
+        "$description": "中文字体，用于中文内容"
+      },
+      "mono": {
+        "$value": "'JetBrains Mono', 'Fira Code', Consolas, monospace",
+        "$description": "等宽字体，用于代码"
+      }
+    },
+    "fontSize": {
+      "$type": "dimension",
+      "$description": "字体大小比例（基于16px基准）",
+      "xs": { "$value": "12px", "$description": "超小字体，用于辅助信息" },
+      "sm": { "$value": "14px", "$description": "小字体，用于次要文本" },
+      "base": { "$value": "16px", "$description": "基准字体，用于正文" },
+      "lg": { "$value": "18px", "$description": "大字体，用于强调文本" },
+      "xl": { "$value": "20px", "$description": "超大字体" },
+      "2xl": { "$value": "24px", "$description": "标题6级" },
+      "3xl": { "$value": "30px", "$description": "标题5级" },
+      "4xl": { "$value": "36px", "$description": "标题4级" },
+      "5xl": { "$value": "48px", "$description": "标题3级" },
+      "6xl": { "$value": "60px", "$description": "标题2级" },
+      "7xl": { "$value": "72px", "$description": "标题1级" }
+    },
+    "fontWeight": {
+      "$type": "fontWeight",
+      "thin": { "$value": 100, "$description": "极细" },
+      "light": { "$value": 300, "$description": "细" },
+      "regular": { "$value": 400, "$description": "常规" },
+      "medium": { "$value": 500, "$description": "中等" },
+      "semibold": { "$value": 600, "$description": "半粗" },
+      "bold": { "$value": 700, "$description": "粗" },
+      "extrabold": { "$value": 800, "$description": "特粗" }
+    },
+    "lineHeight": {
+      "$type": "number",
+      "tight": { "$value": 1.25, "$description": "紧凑行高，用于标题" },
+      "snug": { "$value": 1.375, "$description": "较紧行高" },
+      "normal": { "$value": 1.5, "$description": "标准行高，用于正文" },
+      "relaxed": { "$value": 1.625, "$description": "宽松行高" },
+      "loose": { "$value": 2, "$description": "很宽行高" }
+    },
+    "letterSpacing": {
+      "$type": "dimension",
+      "tighter": { "$value": "-0.05em", "$description": "更紧字间距" },
+      "tight": { "$value": "-0.025em", "$description": "紧字间距" },
+      "normal": { "$value": "0", "$description": "标准字间距" },
+      "wide": { "$value": "0.025em", "$description": "宽字间距" },
+      "wider": { "$value": "0.05em", "$description": "更宽字间距" },
+      "widest": { "$value": "0.1em", "$description": "最宽字间距" }
+    },
+    "textStyles": {
+      "$description": "预定义文本样式组合",
+      "heading1": {
+        "$value": {
+          "fontFamily": "{typography.fontFamily.primary}",
+          "fontSize": "{typography.fontSize.7xl}",
+          "fontWeight": "{typography.fontWeight.bold}",
+          "lineHeight": "{typography.lineHeight.tight}",
+          "letterSpacing": "{typography.letterSpacing.tight}"
+        },
+        "$description": "一级标题样式"
+      },
+      "heading2": {
+        "$value": {
+          "fontFamily": "{typography.fontFamily.primary}",
+          "fontSize": "{typography.fontSize.6xl}",
+          "fontWeight": "{typography.fontWeight.bold}",
+          "lineHeight": "{typography.lineHeight.tight}",
+          "letterSpacing": "{typography.letterSpacing.tight}"
+        },
+        "$description": "二级标题样式"
+      },
+      "heading3": {
+        "$value": {
+          "fontFamily": "{typography.fontFamily.primary}",
+          "fontSize": "{typography.fontSize.5xl}",
+          "fontWeight": "{typography.fontWeight.semibold}",
+          "lineHeight": "{typography.lineHeight.tight}"
+        },
+        "$description": "三级标题样式"
+      },
+      "heading4": {
+        "$value": {
+          "fontFamily": "{typography.fontFamily.primary}",
+          "fontSize": "{typography.fontSize.4xl}",
+          "fontWeight": "{typography.fontWeight.semibold}",
+          "lineHeight": "{typography.lineHeight.snug}"
+        },
+        "$description": "四级标题样式"
+      },
+      "heading5": {
+        "$value": {
+          "fontFamily": "{typography.fontFamily.primary}",
+          "fontSize": "{typography.fontSize.3xl}",
+          "fontWeight": "{typography.fontWeight.medium}",
+          "lineHeight": "{typography.lineHeight.snug}"
+        },
+        "$description": "五级标题样式"
+      },
+      "heading6": {
+        "$value": {
+          "fontFamily": "{typography.fontFamily.primary}",
+          "fontSize": "{typography.fontSize.2xl}",
+          "fontWeight": "{typography.fontWeight.medium}",
+          "lineHeight": "{typography.lineHeight.normal}"
+        },
+        "$description": "六级标题样式"
+      },
+      "bodyLarge": {
+        "$value": {
+          "fontFamily": "{typography.fontFamily.primary}",
+          "fontSize": "{typography.fontSize.lg}",
+          "fontWeight": "{typography.fontWeight.regular}",
+          "lineHeight": "{typography.lineHeight.relaxed}"
+        },
+        "$description": "大号正文样式"
+      },
+      "bodyBase": {
+        "$value": {
+          "fontFamily": "{typography.fontFamily.primary}",
+          "fontSize": "{typography.fontSize.base}",
+          "fontWeight": "{typography.fontWeight.regular}",
+          "lineHeight": "{typography.lineHeight.normal}"
+        },
+        "$description": "标准正文样式"
+      },
+      "bodySmall": {
+        "$value": {
+          "fontFamily": "{typography.fontFamily.primary}",
+          "fontSize": "{typography.fontSize.sm}",
+          "fontWeight": "{typography.fontWeight.regular}",
+          "lineHeight": "{typography.lineHeight.normal}"
+        },
+        "$description": "小号正文样式"
+      },
+      "caption": {
+        "$value": {
+          "fontFamily": "{typography.fontFamily.primary}",
+          "fontSize": "{typography.fontSize.xs}",
+          "fontWeight": "{typography.fontWeight.regular}",
+          "lineHeight": "{typography.lineHeight.normal}"
+        },
+        "$description": "说明文字样式"
+      },
+      "code": {
+        "$value": {
+          "fontFamily": "{typography.fontFamily.mono}",
+          "fontSize": "{typography.fontSize.sm}",
+          "fontWeight": "{typography.fontWeight.regular}",
+          "lineHeight": "{typography.lineHeight.relaxed}"
+        },
+        "$description": "代码文字样式"
+      }
+    }
+  }
+}

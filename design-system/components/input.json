@@ -1,0 +1,118 @@
+{
+  "$schema": "https://design-tokens.org/schema.json",
+  "$description": "输入框组件规范 - AI可读格式",
+  "component": "Input",
+  "description": "输入框用于接收用户的文本输入",
+  "variants": {
+    "outlined": {
+      "description": "带边框的输入框（默认）",
+      "states": {
+        "default": {
+          "background": "{colors.neutral.0}",
+          "border": "1px solid {colors.neutral.300}",
+          "color": "{colors.neutral.900}"
+        },
+        "hover": {
+          "background": "{colors.neutral.0}",
+          "border": "1px solid {colors.neutral.400}",
+          "color": "{colors.neutral.900}"
+        },
+        "focus": {
+          "background": "{colors.neutral.0}",
+          "border": "2px solid {colors.primary.500}",
+          "color": "{colors.neutral.900}",
+          "outline": "none"
+        },
+        "error": {
+          "background": "{colors.semantic.error.light}",
+          "border": "1px solid {colors.semantic.error.main}",
+          "color": "{colors.neutral.900}"
+        },
+        "disabled": {
+          "background": "{colors.neutral.100}",
+          "border": "1px solid {colors.neutral.200}",
+          "color": "{colors.neutral.500}",
+          "cursor": "not-allowed"
+        }
+      }
+    },
+    "filled": {
+      "description": "填充背景的输入框",
+      "states": {
+        "default": {
+          "background": "{colors.neutral.100}",
+          "border": "none",
+          "borderBottom": "2px solid {colors.neutral.400}",
+          "color": "{colors.neutral.900}"
+        },
+        "focus": {
+          "background": "{colors.neutral.100}",
+          "border": "none",
+          "borderBottom": "2px solid {colors.primary.500}",
+          "color": "{colors.neutral.900}"
+        }
+      }
+    }
+  },
+  "sizes": {
+    "sm": {
+      "description": "小尺寸输入框",
+      "height": "32px",
+      "paddingX": "{spacing.2}",
+      "fontSize": "{typography.fontSize.sm}",
+      "borderRadius": "{effects.borderRadius.md}"
+    },
+    "md": {
+      "description": "中等尺寸输入框（默认）",
+      "height": "40px",
+      "paddingX": "{spacing.3}",
+      "fontSize": "{typography.fontSize.base}",
+      "borderRadius": "{effects.borderRadius.md}"
+    },
+    "lg": {
+      "description": "大尺寸输入框",
+      "height": "48px",
+      "paddingX": "{spacing.4}",
+      "fontSize": "{typography.fontSize.lg}",
+      "borderRadius": "{effects.borderRadius.lg}"
+    }
+  },
+  "elements": {
+    "label": {
+      "fontSize": "{typography.fontSize.sm}",
+      "fontWeight": "{typography.fontWeight.medium}",
+      "color": "{colors.neutral.700}",
+      "marginBottom": "{spacing.1}"
+    },
+    "placeholder": {
+      "color": "{colors.neutral.500}"
+    },
+    "helperText": {
+      "fontSize": "{typography.fontSize.xs}",
+      "color": "{colors.neutral.600}",
+      "marginTop": "{spacing.1}"
+    },
+    "errorText": {
+      "fontSize": "{typography.fontSize.xs}",
+      "color": "{colors.semantic.error.main}",
+      "marginTop": "{spacing.1}"
+    },
+    "icon": {
+      "size": "20px",
+      "color": "{colors.neutral.500}",
+      "padding": "{spacing.2}"
+    }
+  },
+  "usage": {
+    "do": [
+      "始终提供清晰的标签",
+      "使用占位符展示输入示例",
+      "提供有帮助的错误信息"
+    ],
+    "dont": [
+      "不要只用占位符代替标签",
+      "不要在输入框内放置过多元素",
+      "不要使用模糊的错误信息"
+    ]
+  }
+}

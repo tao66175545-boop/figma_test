@@ -1,0 +1,74 @@
+{
+  "$schema": "https://design-tokens.org/schema.json",
+  "$description": "设计系统颜色令牌 - AI可读格式",
+  "colors": {
+    "primary": {
+      "$type": "color",
+      "$description": "主色调，用于主要按钮、链接、重点强调",
+      "50": { "$value": "#E3F2FD", "$description": "最浅的主色调" },
+      "100": { "$value": "#BBDEFB", "$description": "浅主色调" },
+      "200": { "$value": "#90CAF9", "$description": "较浅主色调" },
+      "300": { "$value": "#64B5F6", "$description": "中浅主色调" },
+      "400": { "$value": "#42A5F5", "$description": "中等主色调" },
+      "500": { "$value": "#2196F3", "$description": "标准主色调（默认）" },
+      "600": { "$value": "#1E88E5", "$description": "中深主色调" },
+      "700": { "$value": "#1976D2", "$description": "较深主色调" },
+      "800": { "$value": "#1565C0", "$description": "深主色调" },
+      "900": { "$value": "#0D47A1", "$description": "最深主色调" }
+    },
+    "secondary": {
+      "$type": "color",
+      "$description": "次要色调，用于次要按钮、辅助元素",
+      "50": { "$value": "#FCE4EC", "$description": "最浅的次要色调" },
+      "100": { "$value": "#F8BBD9", "$description": "浅次要色调" },
+      "200": { "$value": "#F48FB1", "$description": "较浅次要色调" },
+      "300": { "$value": "#F06292", "$description": "中浅次要色调" },
+      "400": { "$value": "#EC407A", "$description": "中等次要色调" },
+      "500": { "$value": "#E91E63", "$description": "标准次要色调（默认）" },
+      "600": { "$value": "#D81B60", "$description": "中深次要色调" },
+      "700": { "$value": "#C2185B", "$description": "较深次要色调" },
+      "800": { "$value": "#AD1457", "$description": "深次要色调" },
+      "900": { "$value": "#880E4F", "$description": "最深次要色调" }
+    },
+    "neutral": {
+      "$type": "color",
+      "$description": "中性色，用于文本、背景、边框",
+      "0": { "$value": "#FFFFFF", "$description": "纯白" },
+      "50": { "$value": "#FAFAFA", "$description": "最浅灰色" },
+      "100": { "$value": "#F5F5F5", "$description": "浅灰色" },
+      "200": { "$value": "#EEEEEE", "$description": "较浅灰色" },
+      "300": { "$value": "#E0E0E0", "$description": "中浅灰色" },
+      "400": { "$value": "#BDBDBD", "$description": "中等灰色" },
+      "500": { "$value": "#9E9E9E", "$description": "标准灰色" },
+      "600": { "$value": "#757575", "$description": "中深灰色" },
+      "700": { "$value": "#616161", "$description": "较深灰色" },
+      "800": { "$value": "#424242", "$description": "深灰色" },
+      "900": { "$value": "#212121", "$description": "最深灰色" },
+      "1000": { "$value": "#000000", "$description": "纯黑" }
+    },
+    "semantic": {
+      "$type": "color",
+      "$description": "语义色，用于状态反馈",
+      "success": {
+        "light": { "$value": "#E8F5E9", "$description": "成功状态浅色背景" },
+        "main": { "$value": "#4CAF50", "$description": "成功状态主色" },
+        "dark": { "$value": "#2E7D32", "$description": "成功状态深色" }
+      },
+      "warning": {
+        "light": { "$value": "#FFF3E0", "$description": "警告状态浅色背景" },
+        "main": { "$value": "#FF9800", "$description": "警告状态主色" },
+        "dark": { "$value": "#E65100", "$description": "警告状态深色" }
+      },
+      "error": {
+        "light": { "$value": "#FFEBEE", "$description": "错误状态浅色背景" },
+        "main": { "$value": "#F44336", "$description": "错误状态主色" },
+        "dark": { "$value": "#C62828", "$description": "错误状态深色" }
+      },
+      "info": {
+        "light": { "$value": "#E3F2FD", "$description": "信息状态浅色背景" },
+        "main": { "$value": "#2196F3", "$description": "信息状态主色" },
+        "dark": { "$value": "#1565C0", "$description": "信息状态深色" }
+      }
+    }
+  }
+}

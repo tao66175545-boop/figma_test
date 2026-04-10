@@ -1,0 +1,146 @@
+{
+  "$schema": "https://design-tokens.org/schema.json",
+  "$description": "按钮组件规范 - AI可读格式",
+  "component": "Button",
+  "description": "按钮是用户界面中最常用的交互元素，用于触发操作或导航",
+  "variants": {
+    "primary": {
+      "description": "主要按钮，用于页面主要操作",
+      "states": {
+        "default": {
+          "background": "{colors.primary.500}",
+          "color": "{colors.neutral.0}",
+          "border": "none"
+        },
+        "hover": {
+          "background": "{colors.primary.600}",
+          "color": "{colors.neutral.0}",
+          "border": "none"
+        },
+        "active": {
+          "background": "{colors.primary.700}",
+          "color": "{colors.neutral.0}",
+          "border": "none"
+        },
+        "disabled": {
+          "background": "{colors.neutral.300}",
+          "color": "{colors.neutral.500}",
+          "border": "none",
+          "cursor": "not-allowed"
+        }
+      }
+    },
+    "secondary": {
+      "description": "次要按钮，用于辅助操作",
+      "states": {
+        "default": {
+          "background": "{colors.neutral.0}",
+          "color": "{colors.primary.500}",
+          "border": "1px solid {colors.primary.500}"
+        },
+        "hover": {
+          "background": "{colors.primary.50}",
+          "color": "{colors.primary.600}",
+          "border": "1px solid {colors.primary.600}"
+        },
+        "active": {
+          "background": "{colors.primary.100}",
+          "color": "{colors.primary.700}",
+          "border": "1px solid {colors.primary.700}"
+        },
+        "disabled": {
+          "background": "{colors.neutral.100}",
+          "color": "{colors.neutral.400}",
+          "border": "1px solid {colors.neutral.300}",
+          "cursor": "not-allowed"
+        }
+      }
+    },
+    "text": {
+      "description": "文本按钮，用于低优先级操作",
+      "states": {
+        "default": {
+          "background": "transparent",
+          "color": "{colors.primary.500}",
+          "border": "none"
+        },
+        "hover": {
+          "background": "{colors.primary.50}",
+          "color": "{colors.primary.600}",
+          "border": "none"
+        },
+        "active": {
+          "background": "{colors.primary.100}",
+          "color": "{colors.primary.700}",
+          "border": "none"
+        },
+        "disabled": {
+          "background": "transparent",
+          "color": "{colors.neutral.400}",
+          "border": "none",
+          "cursor": "not-allowed"
+        }
+      }
+    },
+    "danger": {
+      "description": "危险按钮，用于破坏性操作",
+      "states": {
+        "default": {
+          "background": "{colors.semantic.error.main}",
+          "color": "{colors.neutral.0}",
+          "border": "none"
+        },
+        "hover": {
+          "background": "{colors.semantic.error.dark}",
+          "color": "{colors.neutral.0}",
+          "border": "none"
+        }
+      }
+    }
+  },
+  "sizes": {
+    "sm": {
+      "description": "小尺寸按钮",
+      "height": "32px",
+      "paddingX": "{spacing.3}",
+      "paddingY": "{spacing.1.5}",
+      "fontSize": "{typography.fontSize.sm}",
+      "borderRadius": "{effects.borderRadius.md}"
+    },
+    "md": {
+      "description": "中等尺寸按钮（默认）",
+      "height": "40px",
+      "paddingX": "{spacing.4}",
+      "paddingY": "{spacing.2}",
+      "fontSize": "{typography.fontSize.base}",
+      "borderRadius": "{effects.borderRadius.md}"
+    },
+    "lg": {
+      "description": "大尺寸按钮",
+      "height": "48px",
+      "paddingX": "{spacing.6}",
+      "paddingY": "{spacing.3}",
+      "fontSize": "{typography.fontSize.lg}",
+      "borderRadius": "{effects.borderRadius.lg}"
+    }
+  },
+  "accessibility": {
+    "focusRing": {
+      "outline": "2px solid {colors.primary.500}",
+      "outlineOffset": "2px"
+    },
+    "minTouchTarget": "44px"
+  },
+  "usage": {
+    "do": [
+      "使用动词开头的文案，如"提交"、"保存"",
+      "主要按钮每个页面最多一个",
+      "按钮文案简洁明了"
+    ],
+    "dont": [
+      "不要在一个区域使用多个主要按钮",
+      "不要使用过长的按钮文案",
+      "不要禁用按钮而不提供原因"
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "$schema": "https://design-tokens.org/schema.json",
+  "$description": "设计系统间距令牌 - AI可读格式",
+  "spacing": {
+    "$type": "dimension",
+    "$description": "间距比例系统（基于4px基准）",
+    "0": { "$value": "0px", "$description": "无间距" },
+    "0.5": { "$value": "2px", "$description": "最小间距" },
+    "1": { "$value": "4px", "$description": "超小间距" },
+    "1.5": { "$value": "6px", "$description": "很小间距" },
+    "2": { "$value": "8px", "$description": "小间距" },
+    "2.5": { "$value": "10px", "$description": "较小间距" },
+    "3": { "$value": "12px", "$description": "中小间距" },
+    "3.5": { "$value": "14px", "$description": "中等偏小间距" },
+    "4": { "$value": "16px", "$description": "中等间距（基准）" },
+    "5": { "$value": "20px", "$description": "中等偏大间距" },
+    "6": { "$value": "24px", "$description": "中大间距" },
+    "7": { "$value": "28px", "$description": "较大间距" },
+    "8": { "$value": "32px", "$description": "大间距" },
+    "9": { "$value": "36px", "$description": "很大间距" },
+    "10": { "$value": "40px", "$description": "超大间距" },
+    "11": { "$value": "44px", "$description": "特大间距" },
+    "12": { "$value": "48px", "$description": "巨大间距" },
+    "14": { "$value": "56px", "$description": "超级间距" },
+    "16": { "$value": "64px", "$description": "最大间距" },
+    "20": { "$value": "80px", "$description": "页面级间距" },
+    "24": { "$value": "96px", "$description": "区块级间距" },
+    "28": { "$value": "112px", "$description": "大区块间距" },
+    "32": { "$value": "128px", "$description": "超大区块间距" }
+  },
+  "layout": {
+    "$description": "布局相关间距",
+    "containerPadding": {
+      "mobile": { "$value": "{spacing.4}", "$description": "移动端容器内边距" },
+      "tablet": { "$value": "{spacing.6}", "$description": "平板容器内边距" },
+      "desktop": { "$value": "{spacing.8}", "$description": "桌面容器内边距" }
+    },
+    "sectionGap": {
+      "small": { "$value": "{spacing.8}", "$description": "小区块间距" },
+      "medium": { "$value": "{spacing.12}", "$description": "中区块间距" },
+      "large": { "$value": "{spacing.16}", "$description": "大区块间距" }
+    },
+    "componentGap": {
+      "xs": { "$value": "{spacing.1}", "$description": "组件内最小间距" },
+      "sm": { "$value": "{spacing.2}", "$description": "组件内小间距" },
+      "md": { "$value": "{spacing.4}", "$description": "组件内中间距" },
+      "lg": { "$value": "{spacing.6}", "$description": "组件内大间距" },
+      "xl": { "$value": "{spacing.8}", "$description": "组件内特大间距" }
+    }
+  }
+}
